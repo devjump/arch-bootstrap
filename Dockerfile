@@ -1,6 +1,6 @@
 FROM alpine:latest AS build
-ADD https://mirrors.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2017.06.01-x86_64.tar.gz .
-RUN tar -xzf archlinux-bootstrap-2017.06.01-x86_64.tar.gz
+ADD https://mirrors.kernel.org/archlinux/iso/latest/archlinux-bootstrap-2017.07.01-x86_64.tar.gz .
+RUN tar -xzf archlinux-bootstrap-2017.07.01-x86_64.tar.gz
 
 FROM scratch
 COPY --from=build root.x86_64 /
